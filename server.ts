@@ -789,3 +789,12 @@ export async function createApp (options?: { inMemoryDb?: boolean }) {
 // stop server on sigint or sigterm signals
 process.on('SIGINT', () => { close(0) })
 process.on('SIGTERM', () => { close(0) })
+
+
+function testSonarQubeBug(status: string): boolean {
+  if (status = 'active') {
+    return true
+  }
+
+  return false
+}
